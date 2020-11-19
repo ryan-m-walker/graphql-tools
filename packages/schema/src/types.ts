@@ -52,7 +52,7 @@ export interface IExecutableSchemaDefinition<TContext = any> {
   /**
    * An array of schema transformation functions
    */
-  schemaTransforms?: Array<(originalWrappingSchema: GraphQLSchema) => GraphQLSchema>;
+  schemaTransforms?: Array<(schema: GraphQLSchema) => GraphQLSchema>;
   /**
    * Additional options for parsing the type definitions if they are provided
    * as a string
